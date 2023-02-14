@@ -1,6 +1,6 @@
 # nba-demo
 
-+ Overview
+## Overview
 
 This repository will use NBA stats to demonstrate various data science examples, including but not limited to: 
 - Cleaning and organizing data,
@@ -20,7 +20,7 @@ I have written a separate package that uses the BeautifulSoup library to extensi
   * If anyone else would like to access this, feel free to contact me at jackbdegen@gmail.com and I will be happy to consider your request.
 
 
-+ What is not in this repository:
+## What is not in this repository:
 
 In addition to the above mentioned webscraper, I will also not provide my projections which take into account further information such as lineups/injuries, my optimizer to create possible lineups, various correlation checkers, and my lineup analyzer to determine leverage points based on most likely ownership combinations.
 
