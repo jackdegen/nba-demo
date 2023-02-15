@@ -17,6 +17,14 @@
 *.zip
 
 
+# Jupyter checkpoints
+
+#########################
+
+.ipynb_checkpoints
+
+
+
 # Private Notebooks
 
 #########################
