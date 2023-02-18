@@ -26,5 +26,14 @@ class FileManager:
         return pd.read_csv(self.clean_path())
     
     
+    def save_dataframe(self, df_save: pd.DataFrame, fname: str, **kwargs) -> None:
+        
+        df_save.to_csv(
+            os.path.join(self.data_dir, fname),
+            index=False
+        )
+        
+        return None
+    
     
     
