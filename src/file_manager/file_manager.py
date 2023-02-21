@@ -28,8 +28,13 @@ class FileManager:
     
     def save_dataframe(self, df_save: pd.DataFrame, fname: str, **kwargs) -> None:
         
+        fpath: str = os.path.join(self.data_dir, fname)
+        
+        if '.csv' not in fpath:
+            fpath: str = '.'.join([fpath, 'csv'])
+        
         df_save.to_csv(
-            os.path.join(self.data_dir, fname),
+            fpath,
             index=False
         )
         
