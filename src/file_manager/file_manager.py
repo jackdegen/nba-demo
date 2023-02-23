@@ -41,4 +41,21 @@ class FileManager:
         return None
     
     
+    def df_from_dir(self, dirname: str, **kwargs) -> pd.DataFrame:
+        dirpath: str = os.path.join(self.data_dir, dirname)
+        
+        df: pd.DataFrame = (pd
+                            .concat([ pd.read_csv(file) for file in glob.glob( dir_path + '/*.csv' ) ])
+                            .reset_index(drop=True)
+                           )
+        
+        
+        if kwargs.get('save', False):
+            self.save_dataframe(df, '.'.join([dirpath, 'csv']))
+            
+        return df
+        
+        
+    
+    
     
