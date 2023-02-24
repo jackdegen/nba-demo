@@ -34,8 +34,8 @@ updating.ipynb
 # Python object files
 
 #########################
+*.pyc
 .pyc
-
 
 # Private Data
 
